@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+			//图片预加载
+			var imgArr=[
+			'images/again.png',
+	
+			];
+			
+			var L = imgArr.length;
+			var startNum = 0;
+			for(var i =0;i<L;i++){
+				var imgObj = new Image();
+				imgObj.src = imgArr[i];
+				imgObj.onload = function(){
+					startNum++;
+					var percent = (startNum/L).toFixed(2)*100+"%";
+					$('.loading span').html(percent);
+					if(startNum == L-1){
+						$(".loading").hide();
+					}
+				}
+			}
+	</script>
+</html>

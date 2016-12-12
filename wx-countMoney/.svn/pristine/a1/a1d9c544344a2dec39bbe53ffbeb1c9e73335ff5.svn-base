@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+	</body>
+</html>
+<script type="text/javascript">
+	window.location.href = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxc474b7722c450b8f&redirect_uri=http://newbirdalex.applinzi.com/countMoney/index.php&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect";
+</script>
